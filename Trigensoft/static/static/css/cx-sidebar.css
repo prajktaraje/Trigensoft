@@ -1,0 +1,217 @@
+/************ STYLE *************/
+#cx-sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    height:100%;
+    background-image:url('../images/Sidebar/sidemenu_bg.png');
+    background-size: cover;
+    box-shadow:0 10px 35px 0  rgb(39, 60, 147,.1);
+    padding:15px;
+    padding-top:0;
+    width:250px;
+    transition: all .5s ease;
+    white-space: nowrap;
+    z-index:1010;
+    overflow-y: auto;
+}
+.cx-list li{
+    margin-bottom:15px;
+    font-size: 16px;
+    position: relative;
+}
+.cx-list li a{
+    display:block;
+    width:100%;
+    height:40px;
+    padding:10px;
+    border-radius:5px;
+    transition: all .5s ease;
+    background:rgba(255,255,255,.35);
+    position: relative;
+}
+.cx-list li a .cx-list-c{
+    position:absolute;
+    top: -2px;
+    left: 12px;
+    bottom:0;
+    margin:auto;
+    width: 20px;
+    height: 20px;
+}
+.cx-list li a .cx-list-c svg{
+    margin-right:7px;
+    position: relative;
+    top:-3px;
+    fill:#241549;
+}
+.cx-list li.cx-nav-active a .cx-list-c svg{
+    fill:#ffffff;
+}
+.cx-list li a span{
+    width:0;
+    opacity:1;
+    transition:all .3s;
+    position: relative;
+    top: -1px;
+}
+
+.cx-msidebar .cx-list li.cx-nav-active a span{
+    color:#ffffff;
+}
+
+.cx-list li.cx-nav-active a{
+    background:#273C93;
+    color:#ffffff !important;
+}
+.cx-list li.cx-nav-active:hover a{
+    background:#273C93;
+    color:#ffffff !important;
+}
+.cx-list li:hover a{
+    background:rgba(255,255,255,.75);
+}
+.cx-sidebar-brand{
+    height:60px;
+    line-height: 55px;
+}
+.cx-sidebar-brand a .cx-brand-icon {
+    width:150px;
+    height:auto;
+    margin-left:0;
+}
+.cx-list li .cx-tooltip{
+    padding:0 10px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    right:-137px;
+    width:115px;
+    height:40px;
+    line-height: 40px;
+    background:#ffffff;
+    box-shadow:0 4px 16px 0 rgba(0,0,0,.05);
+    border-radius:5px;
+    opacity:0;
+    display:none;
+}
+.cx-tooltip::after{
+    content:'';
+    position:absolute;
+    top:12px;
+    left:-7px;
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent; 
+    border-right:7px solid #5EB4FE;
+}
+
+.cx-list li:hover .cx-tooltip{
+    opacity:1;
+}
+.cx-list li .cx-tooltip:hover{
+    opacity:0;
+}
+
+
+@media(max-width:991px){
+    #cx-sidebar{
+        margin-top:60px;
+        left:-250px;
+    }
+    .cx-sidebar-brand{
+        display:none;
+    }
+    .cx-list{
+        margin-top:15px !important;
+    }
+    .cx-tooltip{
+        display:none;
+    }
+}
+
+
+
+/************ TOGGLER *************/
+#cx-sidebar-toggler{
+    height:60px;
+    border-bottom:1px solid #bac9df;
+    border-top:1px solid #bac9df;
+    margin-bottom:15px;
+}
+#cx-sidebar-toggler button{
+    height:60px;
+    width:40px;
+}
+#cx-sidebar-toggler button svg{
+    fill:#33241549 !important;
+}
+#cx-sidebar-toggler button:hover svg{
+    fill:#273C93 !important;
+}
+
+#cx-sidebar-toggler.cx-active button{
+    justify-content: right;
+    display:block;
+    width:100%;
+    transform: rotate(180deg);
+}
+
+
+@media(max-width:991px){
+    .cx-sidebar-toggler{
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+/************ ACCOUNT *************/
+.cx-account img{
+    width:36px;
+    height:36px;
+}
+
+
+/************ Active *************/
+#cx-sidebar.cx-active{
+    width:70px;
+}
+#cx-sidebar.cx-mactive{
+    left:0;
+}
+.cx-list.cx-active li a{
+    text-align: left;
+}
+.cx-list.cx-active li a .cx-list-c{
+    right:unset;
+    left:12px;
+}
+.cx-sidebar-brand.cx-active a .cx-brand-logo {
+   width:24px;
+   opacity:1;
+}
+.cx-list.cx-active li a span{
+    width:100%;
+    opacity:0;
+}
+.cx-sidebar-brand.cx-active {
+    height:45px;
+    text-align: left;   
+}
+.cx-sidebar-brand.cx-active a .cx-brand-icon {
+    margin-right:15px;
+}
+.cx-list.cx-active li .cx-tooltip{
+    display:block;
+}
+.cx-sidebar-brand.cx-active a .cx-brand-icon {
+    height:30px;
+}

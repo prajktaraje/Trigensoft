@@ -1,0 +1,30 @@
+
+/************ Content *************/
+
+
+.cxd-card{
+    background-color: #ffffff;
+    padding:30px;
+    border-radius:10px;
+    color:#241549;
+    position: relative;
+    cursor:pointer;
+    position: relative;
+    box-shadow:0 10px 35px 0  rgb(39, 60, 147,.05);
+}
+
+.cxd-card svg{
+    position: absolute;
+    fill:#273C93 !important;
+    top:30px;
+    right:30px;
+    width:36px;
+    height:36px;
+}
+
+
+@media(max-width:991px){
+    .cxd-card{
+        margin-bottom:30px;
+    }
+}

@@ -1,0 +1,141 @@
+/************ 
+LOGIN STYLE 
+*************/
+
+
+/************ Outer *************/
+.cx-login{
+    width:inherit;
+    height: inherit;
+    letter-spacing: .7px;
+    font-family: 'Montserrat', sans-serif;
+}
+.cx-login .row{
+    height:100%;
+}
+
+
+/************ Graphic *************/
+.cx-login-graphic{
+    height:100%;
+    background-image: url('../images/login/login_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.cx-brand{
+    text-align: center;
+}
+.cx-login-text{
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    bottom:0;
+    top:0;
+    height: 150px;
+    padding: 30px;
+    text-align: center;
+}
+.cx-login-text img{
+    width:200px;
+    margin-bottom:30px;
+    display: inline-block;
+}
+
+.cx-login-text p{
+    color:#241549;
+    font-size: 20px;
+}
+
+
+
+/************ Content *************/
+.cx-login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.cx-login-content{
+    width:500px;
+    background:#ffffff;
+    box-shadow:0 10px 35px 0  rgb(39, 60, 147,.1);
+    border-radius:15px;
+    padding:30px;
+    height:400px;
+}
+.cx-login-content-in{
+    width:100%;
+}
+.cx-login-content-in form{
+    width:100%;
+}
+.cx-login-content .cx-brand-img{
+    width:200px;
+    margin-bottom:30px;
+}
+
+.cx-login-content .form-control{
+    border:1px solid #C5D7E0;
+}
+.cx-login-content button{
+    width:100%;
+    background:#273C93;
+    color:#ffffff;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    border:0;
+    height:44px;
+    font-weight: bold;
+}
+
+.cx-input-icon{
+    position: absolute;
+    right:15px;
+    top:42px;
+    height:18px;
+    width:18px;
+}
+
+
+.cx-role{
+    
+}
+.cx-role ul{
+  width:100%;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+}
+.cx-role ul li{
+    background:#f7f7f7;
+    padding:20px;
+    border-radius:7px;
+    width:100%;
+    margin-top:15px;
+}
+.cx-role ul li:nth-child(1){
+    margin-top: 0;
+}
+.cx-role ul li img{
+    width:36px;
+    height:36px;
+    margin-right:15px;
+}
+.cx-role ul li span{
+    color:#2C2C36;
+}
+
+
+@media(max-width:991px){
+    .cx-login-form{
+        height:auto;
+    }
+    .cx-login-content{
+        margin:30px;
+    }
+
+}

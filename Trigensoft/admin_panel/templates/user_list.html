@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+  <link href="{% static 'static/css/cx-admin-listing.css' %}" rel="stylesheet">
+  <title>User List</title>
+  <style>
+    .search {
+      position: relative;
+      background: white;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .search i {
+      position: absolute;
+      top: 12px;
+      right: 4%;
+      font-size: 15px;
+    }
+    h6 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .btn-danger:hover, .btn-danger:focus, .btn-danger:target, .btn-danger:active {
+      color: #fff;
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+  </style>
+{% endblock %}
+
+{% block title %}
+  USER LIST
+{% endblock %}
+
+{% block content %}
+  <main>
+    <div class="cx-container">
+      <div class="container">
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}" role="alert" style="color: black; font-size: 14px;">{{ message }}
+            <span style="font-size: 14px;color: black;float: right;cursor: pointer" class="dot closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          </div>
+        {% endfor %}
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="cx-card-header" style="border-bottom: 0px solid #FFF;">
+              <h2></h2>
+
+            </div>
+            {% if request.user.isAdmin == True%}
+            <div class="table-responsive" data-simplebar>
+              <table class="table" id="cxu-table">
+                <thead>
+                  <tr>
+                    <th>Sr.No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for user in User_list %}
+                    <tr>
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ user.firstname|default_if_none:'' }}</td>
+                      <td>{{ user.lastname|default_if_none:'' }}</td>
+                      <td>{{ user.email|default_if_none:'' }}</td>
+                      <td>
+                        <ul>
+                          <li>
+                            <a href="{% url 'admin_panel:edit_user' user.id %}?page={{ page }}">
+                              <button type="button">
+                                <i class="bx bxs-pencil"></i>
+                              </button>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="javascript:void(0)">
+                              <button type="button" class="delete-btn" data-id="{{ user.id }}">
+                                <i class="bx bxs-trash-alt"></i>
+                              </button>
+                            </a>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            {%elif request.user.isAdmin == False%}
+            <p>Wellcome</p>
+            {%endif%}
+          </div>
+        </div>
+        <nav aria-label="Page navigation example" id="cx-pagination">
+          <ul class="pagination">
+            {% if User_list.has_previous %}
+              <li class="page-item">
+                <a class="page-link" href="?page=1"> &laquo; FIRST </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="?page={{ User_list.previous_page_number }}"> PREVIOUS </a>
+              </li>
+            {% endif %}
+            {% if User_list.has_next %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{ User_list.next_page_number }}"> NEXT </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="?page={{ User_list.paginator.num_pages }}"> LAST &raquo; </a>
+              </li>
+            {% endif %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <div class="modal fade" id="deleteAdminModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">DELETE CONFIRMATION</h5>
+        </div>
+        <div class="modal-body">
+          <h6>Are you sure, you want to delete this.?</h6>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'admin_panel:user_list' %}">
+            <button class="btn btn-group-vertical" type="button" data-dismiss="modal">Cancel</button>
+          </a>
+          <a class="btn btn-danger" id="delete-url" href="">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script>
+    $("#cxu-table").on('click', '.delete-btn', function () {
+      var id = $(this).data('id');
+      $("#deleteAdminModal").modal('show');
+      $("#delete-url").attr("href", "/delete_user/"+id+"/");
+    });
+  </script>
+  <script>
+    function submitSearch() {
+      document.getElementById("searchAdmins").submit();
+    }
+  </script>
+{% endblock %}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5118" data-name="Rectangle 5118" width="20" height="20" transform="translate(0.319 0.319)" fill="#4f9fe6" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cca78d"/>
+      <stop offset="1" stop-color="#ac856b"/>
+    </linearGradient>
+  </defs>
+  <g id="ic_edit" transform="translate(-0.319 -0.319)" clip-path="url(#clip-path)">
+    <path id="_13975903631543238879_1_" data-name="13975903631543238879 (1)" d="M12.473,1.4a.788.788,0,0,1,.559.232l3.955,3.955a.791.791,0,0,1,0,1.119L6.7,16.987a.791.791,0,0,1-.559.232H2.191a.791.791,0,0,1-.791-.791V12.473a.791.791,0,0,1,.232-.559L11.914,1.632A.788.788,0,0,1,12.473,1.4Zm2.836,4.746L12.473,3.309,2.982,12.8v2.836H5.818Z" transform="translate(1.009 1.01)" fill="url(#linear-gradient)"/>
+    <path id="_13975903631543238879_1_-_Outline" data-name="13975903631543238879 (1) - Outline" d="M12.473,1.15a1.034,1.034,0,0,1,.736.3L17.164,5.41a1.041,1.041,0,0,1,0,1.472L6.882,17.164a1.034,1.034,0,0,1-.736.3H2.191A1.042,1.042,0,0,1,1.15,16.428V12.473a1.034,1.034,0,0,1,.3-.736L11.737,1.455A1.034,1.034,0,0,1,12.473,1.15ZM6.146,16.969a.537.537,0,0,0,.382-.158L16.81,6.528a.541.541,0,0,0,0-.765L12.856,1.808a.541.541,0,0,0-.765,0L1.808,12.091a.537.537,0,0,0-.158.382v3.955a.542.542,0,0,0,.541.541ZM12.473,2.956l3.19,3.19L5.922,15.887H2.732V12.7Zm2.483,3.19L12.473,3.663,3.232,12.9v2.483H5.714Z" transform="translate(1.009 1.01)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

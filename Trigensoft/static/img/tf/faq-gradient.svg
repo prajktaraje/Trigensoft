@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cca78d"/>
+      <stop offset="1" stop-color="#ac856b"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_29213" data-name="Group 29213" transform="translate(-5121 -1078)">
+    <g id="Group_29212" data-name="Group 29212">
+      <g id="Group_29211" data-name="Group 29211">
+        <g id="Group_29210" data-name="Group 29210">
+          <g id="Group_11495" data-name="Group 11495" transform="translate(-7558.722 -4314.806)">
+            <g id="Group_11494" data-name="Group 11494" transform="translate(12679.722 5392.806)">
+              <path id="Path_69985" data-name="Path 69985" d="M12637.768,5381.029v6.433a1.553,1.553,0,0,0,1.619,1.408c1.514.015,7.988,0,7.988,0l3.993,4.273s.685.4.675-.587,0-3.685,0-3.685,2.393.451,2.411-1.551,0-7.637,0-7.637.081-1.4-1.6-1.4-7.561,0-7.561,0,.349,2.14-.509,2.51a2.219,2.219,0,0,1-1.335.239C12642.905,5381.067,12637.768,5381.029,12637.768,5381.029Z" transform="translate(-12636.462 -5375.221)" fill="url(#linear-gradient)"/>
+              <line id="Line_70" data-name="Line 70" x2="6.246" transform="translate(3.438 6.677)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.8"/>
+              <line id="Line_71" data-name="Line 71" x2="6.246" transform="translate(3.438 8.559)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.8"/>
+              <line id="Line_72" data-name="Line 72" x2="6.246" transform="translate(3.438 10.443)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.8"/>
+              <text id="_" data-name="?" transform="translate(12.648 8.694)" fill="rgba(255,255,255,0.95)" font-size="5" font-family="Overpass-Bold, Overpass" font-weight="700" letter-spacing="0.03em"><tspan x="0" y="0">?</tspan></text>
+              <g id="Group_11491" data-name="Group 11491">
+                <path id="Path_69986" data-name="Path 69986" d="M12637.348,5375.807c.551.013,7.07,0,7.07,0a.58.58,0,0,1,.556.581c0,.554,0,4.141,0,4.141s.03.487-.557.526-7.19,0-7.19,0-.429-.077-.437-.688,0-4.062,0-4.062a.508.508,0,0,1,.558-.5Z" transform="translate(-12636.786 -5375.805)" fill="url(#linear-gradient)"/>
+                <text id="FAQ" transform="translate(0.313 3.219)" fill="#fff" font-size="3" font-family="Overpass-Bold, Overpass" font-weight="700" letter-spacing="0.03em"><tspan x="0" y="0">FAQ</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+;;files to ignore
+
+;;extensions to ignore
+*.xml
+*.log
+*.pot
+*.pyc
+*.sqlite3
+
+
+;;directories to ignore
+.idea/*
+migrations
+media/
+*/__pycache__
+
+node_modules
+package-lock.json
+
+/server.js 

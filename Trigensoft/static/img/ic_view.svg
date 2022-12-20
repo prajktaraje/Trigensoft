@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cca78d"/>
+      <stop offset="1" stop-color="#ac856b"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5117" data-name="Rectangle 5117" width="20" height="20" transform="translate(0.277 0.277)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="ic_view" transform="translate(-0.277 -0.277)" clip-path="url(#clip-path)">
+    <path id="_11900898961577437016" data-name="11900898961577437016" d="M21.088,10.476c-.142-.214-4.416-5.984-9.83-5.984s-9.688,5.77-9.83,5.984a.65.65,0,0,0,0,.855c.142.214,4.416,5.984,9.83,5.984s9.688-5.77,9.83-5.984A.65.65,0,0,0,21.088,10.476Zm-9.83,3.989A3.562,3.562,0,1,1,14.819,10.9,3.527,3.527,0,0,1,11.258,14.465Z" transform="translate(-0.98 -0.626)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

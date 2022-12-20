@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+  <link href="{% static 'static/css/cx-form.css' %}" rel="stylesheet">
+  <title>Update User</title>
+  <style>
+    .textarea {
+      height: auto;
+      padding: 1%;
+    }
+    .cx-btn {
+      margin-right: 20px;
+    }
+  </style>
+{% endblock %}
+
+{% block title %}
+  UPDATE USER
+{% endblock %}
+
+{% block content %}
+  <main>
+    <div class="cx-container">
+      <div class="container">
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}" role="alert" style="color: black; font-size: 14px;">{{ message }}
+            <span style="font-size: 14px;color: black;float: right;cursor: pointer" class="dot closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          </div>
+        {% endfor %}
+        <form action="#" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="cx-form">
+                <div class="cx-card cxf-fhead">
+                  <div class="cx-card-header">
+                    <h2>UPDATE USER</h2>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-12">
+                      <div class="cx-form-group">
+                        <label for="firstname" class="form-label">First Name</label>
+                        <input type="text" class="cx-form-control" id="firstname" name="firstname" value="{{user_obj.firstname|default_if_none:''}}" placeholder="" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12">
+                      <div class="cx-form-group">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text" class="cx-form-control" id="lastname" name="lastname" value="{{user_obj.lastname|default_if_none:''}}" placeholder="" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12">
+                      <div class="cx-form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="cx-form-control" id="email" name="email" value="{{user_obj.email|default_if_none:''}}" placeholder="" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                      <div class="cx-form-group">
+                        <label for="image" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="image" value="{{user_obj.profile_pic|default_if_none:''}}" name="image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cx-bbtn">
+            <a href="#">
+              <button type="button" class="cx-btn cx-bottom-btn">Cancel</button>
+            </a>
+            <input type="submit" class="cx-btn cx-bottom-btn" value="UPDATE">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+{% endblock %}

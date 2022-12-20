@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5123" data-name="Rectangle 5123" width="18" height="18" transform="translate(24 69)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="ic_category" transform="translate(-24 -69)" clip-path="url(#clip-path)">
+    <g id="Icons" transform="translate(22.829 67.829)">
+      <g id="Rounded" transform="translate(0 0)">
+        <g id="Maps" transform="translate(0 0)">
+          <g id="_-Round-_-Maps-_-category" data-name="-Round-/-Maps-/-category">
+            <g id="Group_29191" data-name="Group 29191">
+              <path id="Path" d="M0,0H20.343V20.343H0Z" fill="none"/>
+              <path id="_-Icon-Color" data-name="🔹-Icon-Color" d="M12.533,5.882a.841.841,0,0,1,1.441,0l3.145,5.154a.846.846,0,0,1-.72,1.288H10.1a.846.846,0,0,1-.72-1.288Zm5.382,15.766a3.814,3.814,0,1,1,3.814-3.814A3.814,3.814,0,0,1,17.916,21.648ZM6.473,21.224a.85.85,0,0,1-.848-.848V15.29a.85.85,0,0,1,.848-.848h5.086a.85.85,0,0,1,.848.848v5.086a.85.85,0,0,1-.848.848Z" transform="translate(-3.082 -3)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

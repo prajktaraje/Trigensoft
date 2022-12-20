@@ -1,0 +1,72 @@
+/************ Content *************/
+.cxf-add-family{
+    width:36px;
+    height:36px;
+    padding:0;
+    line-height: 40px;
+}
+.cxf-add-family i{
+    font-size: 20px;
+}
+.cxf-member-card{
+    background-color: #fafafa;
+    padding:30px;
+    border-radius:10px;
+    padding-top:0;
+    margin-top:30px;
+    position:relative;
+}
+.cxf-remove{
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    background-color:rgba(94, 180, 254,.1);
+    height: 30px;
+    width:30px;
+    line-height:28px;
+    text-align: center;
+    border-radius:5px;
+    border:0;
+    transition:all .5s;
+}
+.cxf-remove i{
+    color:#273C93;
+}
+.cxf-remove:hover{
+    background-color:#273C93;
+}
+.cxf-remove:hover i{
+    color:#ffffff;
+}
+.cx-bbtn{
+    position: fixed;
+    bottom:0;
+    right:0;
+    width:calc(100% - 250px);
+    padding:15px;
+    background:#ffffff;
+    box-shadow: 0 -4px 16px 0 rgba(0,0,0,.05);
+    display:flex;
+    justify-content: end;
+    margin-left:250px;
+    transition: all .5s;
+}
+.cx-bbtn button{
+    padding:10px 25px;
+}
+.cx-bbtn .cx-bottom-border{
+    background-color: transparent;
+    color:#273C93;
+    border:0;
+    margin-right:15px;
+}
+.cx-bbtn.cx-bchange{
+    width:calc(100% - 70px);
+}
+
+@media(max-width:991px){
+    .cx-bbtn{
+        width:100%;
+        bottom:0;
+    }
+}

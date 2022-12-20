@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5127" data-name="Rectangle 5127" width="18" height="18" transform="translate(5333.479 1075.479)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="ic_world_traveller" transform="translate(-5333.479 -1075.479)" clip-path="url(#clip-path)">
+    <g id="Group_29192" data-name="Group 29192" transform="translate(5334.542 1075.365)">
+      <path id="Subtraction_19" data-name="Subtraction 19" d="M12.527,8.655h-.882c-2.36,0-5.66-.006-7.983-.035V5.22a.436.436,0,0,0-.871,0V8.607C1.623,8.587.966,8.56.838,8.528A9.479,9.479,0,0,1,.044,5.647c0-.033-.36-3.312,1.022-4.273A10.3,10.3,0,0,1,5,.145a.989.989,0,0,1,.427-.12.415.415,0,0,1,.309.12A21.408,21.408,0,0,0,7.5,1.373a.994.994,0,0,0,.535.18.691.691,0,0,0,.465-.18c.513-.349,1.6-1.22,1.614-1.229A.52.52,0,0,1,10.481,0a.617.617,0,0,1,.189.031c.074.024.264.073.528.141a20.991,20.991,0,0,1,3.729,1.2c.523.2,1.131,2.2.895,4.273a21.819,21.819,0,0,1-.5,3H14.84l-1.441,0V5.22a.436.436,0,0,0-.872,0V8.654Z" transform="translate(0 9.574)" fill="#fff"/>
+      <path id="Path_50415" data-name="Path 50415" d="M5398.122,973l-1.595-1.168v-.716a4.38,4.38,0,0,0,3.179,0,3.538,3.538,0,0,1,0,.716Z" transform="translate(-5390.177 -962.698)" fill="#fff"/>
+      <rect id="Rectangle_5124" data-name="Rectangle 5124" width="6.338" height="6.606" rx="3" transform="translate(4.805 1)" fill="#fff"/>
+      <path id="Path_50420" data-name="Path 50420" d="M6127.317,981.958a5.074,5.074,0,0,0,1.794-2.809c.619.071,2.935.833,2.377,4.651-.3-.051-2.291-.651-4.171-1.177A2.536,2.536,0,0,1,6127.317,981.958Z" transform="translate(-6116.691 -974.088)" fill="#fff"/>
+      <path id="Path_50427" data-name="Path 50427" d="M6131.549,981.958a5.074,5.074,0,0,1-1.794-2.809c-.619.071-2.935.833-2.377,4.651.3-.051,2.291-.651,4.171-1.177A2.536,2.536,0,0,0,6131.549,981.958Z" transform="translate(-6126.276 -974.088)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

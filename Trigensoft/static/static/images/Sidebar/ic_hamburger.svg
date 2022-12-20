@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6851" data-name="Rectangle 6851" width="30" height="30" transform="translate(-23149 -798)" fill="#202121" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="ic_hamburger" transform="translate(23149 798)" clip-path="url(#clip-path)">
+    <path id="Icon_open-menu" data-name="Icon open-menu" d="M0,0V2.429H13.6V0ZM0,7.214V9.643H19.432V7.214ZM0,14.5V16.93H8.289V14.5Z" transform="translate(-23143.717 -791.254)" fill="#202121"/>
+  </g>
+</svg>

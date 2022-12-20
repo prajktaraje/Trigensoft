@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5175" data-name="Rectangle 5175" width="24" height="24" transform="translate(2956 1788)" fill="#5eb4fe" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="ic_download" transform="translate(-2956 -1788)" clip-path="url(#clip-path)">
+    <path id="Icon_ionic-md-download" data-name="Icon ionic-md-download" d="M20.083,10.146H16.275V4.5H10.558v5.646H6.75l6.667,6.588ZM6.75,18.617V20.5H20.083V18.617Z" transform="translate(2954.583 1787.5)" fill="#5eb4fe"/>
+  </g>
+</svg>

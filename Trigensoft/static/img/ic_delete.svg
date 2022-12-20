@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cca78d"/>
+      <stop offset="1" stop-color="#ac856b"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5119" data-name="Rectangle 5119" width="20" height="20" transform="translate(-0.204 -0.204)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="ic_delete" transform="translate(0.204 0.204)" clip-path="url(#clip-path)">
+    <g id="Icons" transform="translate(-0.428 -0.429)">
+      <g id="Two-Tone" transform="translate(0)">
+        <g id="Action">
+          <g id="Two-Tone-_-Action-_-delete_outline" data-name="Two-Tone-/-Action-/-delete_outline">
+            <g id="Group_29190" data-name="Group 29190">
+              <path id="Path" d="M0,0H20.449V20.449H0Z" fill="none"/>
+              <path id="_-Primary-Color" data-name="🔹-Primary-Color" d="M5.019,16.133a1.709,1.709,0,0,0,1.7,1.7h6.816a1.709,1.709,0,0,0,1.7-1.7V5.908H5.019Zm1.7-8.52h6.816v8.52H6.723Zm6.39-4.26L12.261,2.5H8l-.852.852H4.167v1.7H16.1v-1.7Z" transform="translate(0.094 0.056)" fill="url(#linear-gradient)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

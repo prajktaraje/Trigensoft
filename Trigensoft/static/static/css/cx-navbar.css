@@ -1,0 +1,180 @@
+
+/************ Navbar *************/
+.cx-navbar{
+    background:#ffffff;
+    box-shadow:0 10px 35px 0  rgb(39, 60, 147,.05);
+    height:60px;
+    transition:all .5s ease;
+    position:relative;
+    z-index:1011;
+}
+header{
+    transition:all .5s;
+    margin-left:250px;
+}
+
+#cx-sidebar-tmobile{
+    padding-left:0;
+}
+.cx-navbar-brand{
+    display:none;
+    width:40px;
+}
+.cx-navbar-brand img{
+    width:40px;
+}
+.cx-logo-container{
+    display:none;
+    align-items: center;
+}
+
+@media(max-width:991px){
+    header{
+        margin-left:0;
+    }
+    .cx-navbar-brand{
+        display: block;
+    }
+    .cx-logo-container{
+        display: flex;
+        margin-right:30px;
+    }
+}
+
+
+
+/************ Navbar Btn *************/
+.cx-sidebar-toggler button{
+    background:transparent;
+    border-color:transparent !important;
+    font-size:1.6rem;
+}
+
+
+/************ Active *************/
+
+header.cx-active{
+    margin-left:70px;
+}
+
+
+/************ Tab Style *************/
+
+#cx-tab{
+    background:#ffffff;
+    box-shadow:0 4px 16px 0 rgba(0,0,0,.025);
+    height:60px;
+    position:relative;
+    z-index:1011;
+    border:0;
+    border-top:1px solid #eeeeee;
+}
+#cx-tab li button{
+    border:0;
+    color:#051B26;
+    background:transparent;
+    margin-left:15px;
+    margin-right:15px;
+    padding:0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#cx-tab li button.active{
+    color:#5EB4FE;
+    position: relative;
+}
+#cx-tab > li > button.active::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-18px;
+    height:3px;
+    width:30%;
+    background:#5EB4FE;
+    border-radius:5px;
+    transition: all .5s ease;
+    animation: mymove .5s;
+}
+@keyframes mymove {
+    from {width: 0px;}
+    to {width: 30%;}
+  }
+
+@media(max-width:576px){
+    #cx-tab{
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+}
+
+
+
+  /************ Account Popup *************/
+  .cx-account{
+      position:relative;
+      cursor: pointer;
+  }
+  .cx-account-popup{
+    position:fixed;
+    top:60px;
+    right:15px;
+    width:200px;
+    height:auto;
+    padding:15px;
+    display:none;
+    z-index:1015;
+    background:#ffffff;
+    box-shadow:0 4px 16px 0 rgba(0,0,0,.2);
+  }
+  .cx-account-popup.cx-active{
+      display:block;
+  }
+  .cx-account-popup ul li{
+      display:flex;
+      align-items: center;
+      margin-bottom:15px;
+  }
+  .cx-account-popup ul li i{
+      margin-right:15px;
+  }
+  .cx-account-popup ul li:nth-last-child(1){
+      margin-bottom:0;
+  }
+  .cx-account-in{
+    position: relative;
+  }
+  .cx-account-popup::after{
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #5EB4FE;
+    position:absolute;
+    top:-5px;
+    right: 10px;
+  }
+  
+
+
+  /************ BREADCRUMB *************/
+.cx-bread-crumb{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.breadcrumb{
+    margin-bottom:0;
+}
+.breadcrumb svg{
+    margin-top:10px;
+}
+.breadcrumb-item a{
+    color:#5EB4FE !important;
+    font-weight: 600;
+}
+.breadcrumb-item.active{
+    color:#2C2C36 !important;
+    font-weight: 600;
+}

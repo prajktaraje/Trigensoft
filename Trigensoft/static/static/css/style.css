@@ -1,0 +1,241 @@
+/************ STYLE *************/
+
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background:#F8FAFE !important;
+    font-size:16px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    color:#241549;
+}
+main{
+    position: relative;
+    z-index: 1009;
+}
+.cx-container{
+    margin-left:250px;
+    transition:all .5s ease;
+    padding:30px;
+    position: relative;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgb(39, 60, 147,.1) !important;
+    border-color: rgb(39, 60, 147,.2) !important;
+}
+.cx-form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(39, 60, 147,.1) !important;
+    border-color: rgb(39, 60, 147,.2) !important;
+}
+a{
+    text-decoration: none !important;
+    color:#241549;
+}
+a:hover{
+    color:#241549;
+}
+ul{
+    padding:0 !important;
+    margin:0 !important;
+}
+li{
+    list-style: none;
+}
+
+@media(max-width:991px){
+    .cx-container{
+        margin-left:0 !important;
+    }
+}
+@media(min-width:1920px){
+    .container{
+        margin:auto !important;
+    }
+}
+
+
+/************ PAGINATION STYLE *************/
+#cx-pagination{
+    position:fixed;
+    bottoM:30px;
+    right:30px;
+    background:#ffffff;
+    box-shadow:4px 0 16px 0 rgba(0,0,0,.025);
+    border:0;
+}
+#cx-pagination ul li a{
+    border:0 !important;
+}
+#cx-pagination ul li a:focus{
+    box-shadow: 0 0 0 0 rgb(13 110 253 / 25%);
+}
+
+
+/************ SCROLLBAR *************/
+.simplebar-scrollbar::before{
+    background-color:#273C93 !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/************ Form *************/
+.cx-form-control{
+    border-radius:7px;
+    border:1px solid #D3CDDF;
+    background-color: transparent;
+    height:38px;
+    padding:0 15px;
+    display:block;
+    width:100%;
+}
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0;
+}
+select:focus-visible {
+    outline: -webkit-focus-ring-color auto 0;
+}
+.cx-form-group{
+    margin-top:30px;
+}
+.cx-form-group label{
+    font-size:12px;
+}
+
+/************ Cards *************/
+.cx-card{
+    background-color: #ffffff;
+    box-shadow:0 10px 35px 0 rgba(0,0,0,.05);
+    padding:30px;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+/************ Card Header *************/
+.cx-card-header{
+   border-bottom:1px solid #e7e7e7;
+   padding-bottom:15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.cx-card-header h2{
+    font-size:20px;
+    letter-spacing: 1.5px;
+    font-weight:600;
+    margin-bottom:0;
+}
+
+@media(max-width:576px){
+    .cx-card-header h2{
+        font-size:16px;
+    }
+}
+
+
+
+/************ Table *************/
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #e7e7e7;
+}
+
+
+
+/************ BUTTON *************/
+.cx-add-btn{
+    position: absolute;
+    right:15px;
+    top:10px;
+}
+.cx-btn-grp{
+    display:flex;
+    justify-content: end;
+    margin-bottom:20px;
+}
+.cx-btn-grp .cx-btn{
+    padding:5px 25px;
+}
+.cx-btn{
+    background:#EBF8FD;
+    color:#273C93;
+    transition:all .5s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius:5px;
+    font-weight: 600;
+    font-size: 16px;
+    border:0;
+    border:1px solid #EBF8FD;
+}
+.cx-btn-bordered{
+    background:transparent;
+    color:#273C93;
+    transition:all .5s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius:5px;
+    font-weight: 600;
+    font-size: 14px;
+    border:0;
+    border:1px solid #EBF8FD;
+}
+.cx-btn-bordered:hover{
+    background:#273C93;
+    color:#ffffff;
+}
+.cx-add-btn button{
+    border:1px dashed #273C93;
+    padding:7px 15px;
+    height:38px;
+}
+.cx-add-btn button i{
+    position: relative;
+    top: 3px;
+    left: -3px;
+    font-size:18px;
+}
+.cx-add-btn button.cxc-add-folder{
+    padding:7px;
+    width:38px;
+    margin-left:10px;
+}
+.cx-add-btn button.cxc-add-folder i{
+    left: 1px;
+}
+
+
+.cx-btn:hover{
+    background:#273C93;
+    border:0;
+    color:#ffffff;
+    border:1px solid #273C93;
+}
+.navbar-toggler:focus{
+    box-shadow:0 0 0 0;
+}
+
+@media(max-width:540px){
+    #cx-tab{
+        display: block !important;
+        height:auto !important;
+        padding: 15px !important;
+    }
+    .cx-search input{
+        padding:0 15px !important;
+        margin:0 !important;
+    }
+    .cx-add-btn{
+        position: static;
+        text-align: right;
+        margin-top:20px;
+        right:unset;
+        left:unset;
+    }
+}
